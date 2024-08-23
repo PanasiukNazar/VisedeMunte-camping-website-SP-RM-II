@@ -2,159 +2,71 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>CampareMontan</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-        <meta content="" name="keywords" />
-        <meta content="" name="description" />
+        <title>VisedeMunte</title>
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
 
-        <!-- Favicon -->
-        <link href="img/favicon.ico" rel="icon" />
+        <!-- Favicons -->
+        <link href="assets/img/favicon.png" rel="icon" />
+        <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
-        <!-- Google Web Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com" rel="preconnect" />
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
             rel="stylesheet"
         />
 
-        <!-- Icon Font Stylesheet -->
+        <!-- Vendor CSS Files -->
         <link
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+            href="assets/vendor/bootstrap/css/bootstrap.min.css"
             rel="stylesheet"
         />
         <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+            href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+            rel="stylesheet"
+        />
+        <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+        <link
+            href="assets/vendor/swiper/swiper-bundle.min.css"
+            rel="stylesheet"
+        />
+        <link
+            href="assets/vendor/glightbox/css/glightbox.min.css"
             rel="stylesheet"
         />
 
-        <!-- Libraries Stylesheet -->
-        <link href="lib/animate/animate.min.css" rel="stylesheet" />
-        <link
-            href="lib/owlcarousel/assets/owl.carousel.min.css"
-            rel="stylesheet"
-        />
-        <link
-            href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css"
-            rel="stylesheet"
-        />
-
-        <!-- Customized Bootstrap Stylesheet -->
-        <link href="css/bootstrap.min.css" rel="stylesheet" />
-
-        <!-- Template Stylesheet -->
-        <link href="css/style.css" rel="stylesheet" />
+        <!-- Main CSS File -->
+        <link href="assets/css/main.css" rel="stylesheet" />
     </head>
 
-    <body>
-        <!-- Spinner Start -->
-        <div
-            id="spinner"
-            class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
-        >
+    <body class="index-page">
+        <header id="header" class="header d-flex align-items-center sticky-top">
             <div
-                class="spinner-border text-primary"
-                style="width: 3rem; height: 3rem"
-                role="status"
+                class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between"
             >
-                <span class="sr-only">Loading...</span>
-            </div>
-        </div>
-        <!-- Spinner End -->
-
-        <!-- Topbar Start -->
-        <div class="container-fluid bg-dark px-5 d-none d-lg-block">
-            <div class="row gx-0">
-                <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
-                    <div
-                        class="d-inline-flex align-items-center"
-                        style="height: 45px"
-                    >
-                        <small class="me-3 text-light"
-                            ><i class="fa fa-map-marker-alt me-2"></i
-                            >Transfăgărășan Km 104, 117040, Romania</small
-                        >
-                        <small class="me-3 text-light"
-                            ><i class="fa fa-phone-alt me-2"></i
-                            >+40722522941</small
-                        >
-                        <small class="text-light"
-                            ><i class="fa fa-envelope-open me-2"></i
-                            >campare_montan@gmail.com</small
-                        >
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Topbar End -->
-
-        <!-- Navbar & Hero Start -->
-        <div class="container-fluid position-relative p-0">
-            <nav
-                class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0"
-                style="
-                    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
-                "
-            >
-                <a href="index.html" class="navbar-brand p-0">
-                    <h1 class="text-primary m-0">
-                        <i class="fa fa-map-marker-alt me-3"></i>CampareMontan
-                    </h1>
-                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                <a href="index.html" class="logo d-flex align-items-center">
+                    <h1 class="sitename">VisedeMunte</h1>
                 </a>
-                <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarCollapse"
-                >
-                    <span class="fa fa-bars"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav ms-auto py-0">
-                        <a href="index.html" class="nav-item nav-link active"
-                            >Acasă</a
-                        >
-                        <a
-                            style="color: #14141f !important"
-                            href="index.html#about"
-                            class="nav-item nav-link"
-                            >Despre</a
-                        >
-                        <a
-                            style="color: #14141f !important"
-                            href="index.html#service"
-                            class="nav-item nav-link"
-                            >Servicii</a
-                        >
-                        <a
-                            style="color: #14141f !important"
-                            href="index.html#testimonial"
-                            class="nav-item nav-link"
-                            >Testimoniale</a
-                        >
-                        <a
-                            style="color: #14141f !important"
-                            href="index.html#team"
-                            class="nav-item nav-link"
-                            >Echipă</a
-                        >
-                        <a
-                            style="color: #14141f !important"
-                            href="index.html#contact"
-                            class="nav-item nav-link"
-                            >Contact</a
-                        >
-                    </div>
-                </div>
-            </nav>
-        </div>
-        <!-- Navbar & Hero End -->
+
+                <nav id="navmenu" class="navmenu">
+                    <ul>
+                        <li>
+                            <a href="index.html#hero" class="active">Acasă</a>
+                        </li>
+                        <li><a href="index.html#about">Despre</a></li>
+                        <li><a href="index.html#services">Servicii</a></li>
+                        <li><a href="index.html#team">Echipa</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                    <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+                </nav>
+            </div>
+        </header>
         <main>
-            <article
-                class="container additional-wrapper"
-                style="margin-top: 100px"
-            >
+            <article class="container additional-wrapper">
                 <div class="page__content" style="padding: 20px 0px">
                     <h1>Politica de Confidențialitate</h1>
 
